@@ -179,6 +179,14 @@ if (cluster.isMaster) {
 
 configSettings.proxyAllDomains = configSettings.proxyAllDomains || typeof configSettings.allowProxyFor === 'undefined';
 
+// Postgres-Settings
+var pgUser = configSettings.pgUser
+var pgPass = configSettings.pgPass
+var pgHost = configSettings.pgHost
+var pgPort = configSettings.pgPort
+var pgDatabase = configSettings.pgDB
+var connectionString = 'postgres://' + pgUser + ':' + pgPass + '@' + pgHost + ':' + pgPort + '/' + pgDatabase;
+
 // eventually this mime type configuration will need to change
 // https://github.com/visionmedia/send/commit/d2cb54658ce65948b0ed6e5fb5de69d022bef941
 var mime = express.static.mime;
