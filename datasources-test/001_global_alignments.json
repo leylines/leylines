@@ -1,0 +1,66 @@
+{
+  "catalog": [
+     {
+	"name": "Global Alignments",
+	"type": "group",
+	"items": [
+	   {
+		"name": "Mt. Shasta - Tiahuanaco",
+		"type": "kml",
+		"url": "geo-data/global-lines/shasta-titicaca-circle.kmz"
+	   },
+	   {
+		"name": "Bermud Triangle",
+		"type": "kml",
+		"url": "geo-data/global-lines/bermuda-triangle.kmz"
+	   },
+	   {
+		"name": "Great Pyramid - Potala",
+		"type": "kml",
+		"url": "geo-data/global-lines/great-pyramid-potala.kmz"
+	   },
+	   {
+		"name": "Beckerhagens - api",
+		"type": "czml",
+		"url": "http://maps.leylines.ch/api/createGrid/0/0/45/45/beckerhagens"
+	   },
+	   {
+		"name": "Beckerhagens Great Circle",
+		"type": "group",
+		"items": [
+		   {
+			"name": "Points",
+			"type": "czml",
+			"url": "http://maps.leylines.ch/api/beckerhagens/original/points"
+		   },
+		   {
+			"name": "Level1-Areas",
+			"type": "czml",
+			"url": "http://maps.leylines.ch/api/beckerhagens/original/area"
+		   },
+		   {
+			"name": "Level1",
+			"type": "czml",
+			"url": "http://maps.leylines.ch/api/beckerhagens/original/1"
+		   },
+		   {
+			"name": "Level2",
+			"type": "czml",
+			"url": "http://maps.leylines.ch/api/beckerhagens/original/2"
+		   },
+		   {
+			"name": "Level3",
+			"type": "czml",
+			"url": "http://maps.leylines.ch/api/beckerhagens/original/3"
+		   },
+		   {
+			"name": "Level4",
+			"type": "czml",
+			"url": "http://maps.leylines.ch/api/beckerhagens/original/4"
+		   }
+		]
+	   }
+	]
+     }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "catalog": [
+     {
+	"name": "Ancient Maps",
+	"type": "group",
+	"items": [
+	   {
+		"name": "Piri-Reis",
+		"description": "Piri-Reis",
+		"dataCustodian": "public",
+		"type": "wms",
+		"url": "http://maps.leylines.ch:8080/geoserver/AncientMaps/wms",
+		"layers": "AncientMaps:piri-reis",
+		"parameters": {
+			"tiled": true
+		},
+		"dataUrlType": "none"
+	   }
+	]
+     }
+  ]
+}

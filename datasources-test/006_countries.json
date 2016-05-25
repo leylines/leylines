@@ -1,0 +1,20 @@
+{
+  "catalog": [
+     {
+	"name": "Countries",
+	"type": "group",
+	"items": [
+	   {
+		"name": "Switzerland",
+		"type": "czml",
+		"url": "http://maps.leylines.ch/api/countries/Switzerland"
+	   },
+	   {
+		"name": "United States",
+		"type": "czml",
+		"url": "http://maps.leylines.ch/api/countries/United States"
+	   }
+	]
+     }
+  ]
+}

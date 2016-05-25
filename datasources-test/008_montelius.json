@@ -1,0 +1,35 @@
+{
+  "catalog": [
+     {
+	"name": "Montelius",
+	"type": "group",
+	"items": [
+	   {
+		"name": "Germany",
+		"type": "czml",
+		"url": "http://maps.leylines.ch/api/montelius/Germany"
+	   },
+	   {
+		"name": "Ireland",
+		"type": "czml",
+		"url": "http://maps.leylines.ch/api/montelius/Ireland"
+	   },
+	   {
+		"name": "Switzerland",
+		"type": "czml",
+		"url": "http://maps.leylines.ch/api/montelius/Switzerland"
+	   },
+	   {
+		"name": "United Kingdom",
+		"type": "czml",
+		"url": "http://maps.leylines.ch/api/montelius/United Kingdom"
+	   },
+	   {
+		"name": "Turkey",
+		"type": "czml",
+		"url": "http://maps.leylines.ch/api/montelius/Turkey"
+	   }
+	]
+     }
+  ]
+}

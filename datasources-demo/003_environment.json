@@ -1,0 +1,105 @@
+{
+  "catalog": [
+     {
+	"name": "Environment",
+	"type": "group",
+	"items": [
+	   {
+		"name": "Magnetism",
+		"type": "group",
+		"items": [
+		   {
+			"name": "WMM-2015-15min",
+			"description": "World Magnetic Field 2015",
+			"dataCustodian": "public",
+			"type": "wms",
+			"url": "http://maps.leylines.ch:8080/geoserver/environment/wms",
+			"layers": "environment:wmm_2015_15min",
+			"parameters": {
+				"tiled": true
+			},
+			"dataUrlType": "none"
+		   },
+		   {
+			"name": "WMM-2016-15min",
+			"description": "World Magnetic Field 2016",
+			"dataCustodian": "public",
+			"type": "wms",
+			"url": "http://maps.leylines.ch:8080/geoserver/environment/wms",
+			"layers": "environment:wmm_2016_15min",
+			"parameters": {
+				"tiled": true
+			},
+			"dataUrlType": "none"
+		   },
+		   {
+			"name": "WMM-2017-15min",
+			"description": "World Magnetic Field 2017",
+			"dataCustodian": "public",
+			"type": "wms",
+			"url": "http://maps.leylines.ch:8080/geoserver/environment/wms",
+			"layers": "environment:wmm_2017_15min",
+			"parameters": {
+				"tiled": true
+			},
+			"dataUrlType": "none"
+		   },
+		   {
+			"name": "WMM-2018-15min",
+			"description": "World Magnetic Field 2018",
+			"dataCustodian": "public",
+			"type": "wms",
+			"url": "http://maps.leylines.ch:8080/geoserver/environment/wms",
+			"layers": "environment:wmm_2018_15min",
+			"parameters": {
+				"tiled": true
+			},
+			"dataUrlType": "none"
+		   },
+		   {
+			"name": "WMM-2019-15min",
+			"description": "World Magnetic Field 2019",
+			"dataCustodian": "public",
+			"type": "wms",
+			"url": "http://maps.leylines.ch:8080/geoserver/environment/wms",
+			"layers": "environment:wmm_2019_15min",
+			"parameters": {
+				"tiled": true
+			},
+			"dataUrlType": "none"
+		   },
+		   {
+			"name": "WMM-2020-15min",
+			"description": "World Magnetic Field 2020",
+			"dataCustodian": "public",
+			"type": "wms",
+			"url": "http://maps.leylines.ch:8080/geoserver/environment/wms",
+			"layers": "environment:wmm_2020_15min",
+			"parameters": {
+				"tiled": true
+			},
+			"dataUrlType": "none"
+		   }
+		]
+	   },
+	   {
+		"name": "Rivers",
+		"description": "Rivers",
+		"dataCustodian": "public",
+		"type": "wms",
+		"url": "http://maps.leylines.ch:8080/geoserver/environment/wms",
+		"layers": "environment:rivers",
+		"parameters": {
+			"tiled": true
+		},
+		"dataUrlType": "none"
+	   },
+	   {
+		"name": "Telegeography",
+		"type": "kml",
+		"url": "geo-data/telegeography/kml/fusion-cables-201505261310.kml"
+	   }
+	]
+     }
+  ]
+}

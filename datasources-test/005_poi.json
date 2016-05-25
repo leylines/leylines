@@ -1,0 +1,21 @@
+{
+  "catalog": [
+     {
+	"name": "POI",
+	"type": "group",
+	"items": [
+	   {
+		"name": "Books",
+		"type": "group",
+		"items": [
+		   {
+			"name": "Diane Cooper",
+			"type": "czml",
+			"url": "http://maps.leylines.ch/api/poi"
+		   }
+		]
+	   }
+	]
+     }
+  ]
+}

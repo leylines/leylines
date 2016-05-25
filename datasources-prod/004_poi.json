@@ -1,0 +1,65 @@
+{
+  "catalog": [
+     {
+	"name": "POI",
+	"type": "group",
+	"items": [
+	   {
+		"name": "Mountains",
+		"type": "czml",
+		"url": "http://maps.leylines.ch/api/points/poi/mountains/mountain.png"
+	   },
+	   {
+		"name": "Alignments",
+		"type": "czml",
+		"url": "http://maps.leylines.ch/api/points/poi/alignments/alignment.png"
+	   },
+	   {
+		"name": "Stones",
+		"type": "czml",
+		"url": "http://maps.leylines.ch/api/points/poi/stones/stone.png"
+	   },
+	   {
+		"name": "Stargates",
+		"type": "czml",
+		"url": "http://maps.leylines.ch/api/points/poi/stargates/stargate.png"
+	   },
+	   {
+		"name": "Sites",
+		"type": "czml",
+		"url": "http://maps.leylines.ch/api/points/poi/sites/button_red.png"
+	   },
+	   {
+		"name": "Ufo Hotspots",
+		"type": "czml",
+		"url": "http://maps.leylines.ch/api/points/poi/ufo_hotspots/alien.png"
+	   },
+	   {
+		"name": "Tibetan Monasteries",
+		"type": "czml",
+		"url": "http://maps.leylines.ch/api/points/poi/monasteries_tibetian/monastery.png"
+	   },
+	   {
+		"name": "Churches",
+		"type": "czml",
+		"url": "http://maps.leylines.ch/api/points/poi/churches/church.png"
+	   },
+	   {
+		"name": "Caves",
+		"type": "czml",
+		"url": "http://maps.leylines.ch/api/points/poi/caves/cave.png"
+	   },
+	   {
+		"name": "Maya Sites",
+		"type": "czml",
+		"url": "http://maps.leylines.ch/api/points/poi/sites_maya/maya.png"
+	   },
+	   {
+		"name": "Egyptian Pyramids",
+		"type": "czml",
+		"url": "http://maps.leylines.ch/api/points/poi/pyramids_egyptian/pyramid.png"
+	   }
+	]
+     }
+  ]
+}

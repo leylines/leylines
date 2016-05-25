@@ -1,0 +1,154 @@
+{
+  "catalog": [
+     {
+	"name": "Global Alignments",
+	"type": "group",
+	"items": [
+	   {
+		"name": "Mt. Shasta - Tiahuanaco",
+		"type": "kml",
+		"url": "geo-data/global-lines/shasta-titicaca-circle.kmz"
+	   },
+	   {
+		"name": "Bermud Triangle",
+		"type": "kml",
+		"url": "geo-data/global-lines/bermuda-triangle.kmz"
+	   },
+	   {
+		"name": "Great Pyramid - Potala",
+		"type": "kml",
+		"url": "geo-data/global-lines/great-pyramid-potala.kmz"
+	   },
+	   {
+		"name": "Beckerhagens - Gizeh - Pothala",
+		"type": "group",
+		"items": [
+		   {
+			"name": "Points",
+			"type": "czml",
+			"url": "http://localhost:3001/api/createGridCoords/29.979235/31.134202/29.657984/91.116846/beckerhagens/p"
+		   },
+		   {
+			"name": "1. Level Lines",
+			"type": "czml",
+			"url": "http://localhost:3001/api/createGridCoords/29.979235/31.134202/29.657984/91.116846/beckerhagens/1"
+		   },
+		   {
+			"name": "2. Level Lines",
+			"type": "czml",
+			"url": "http://localhost:3001/api/createGridCoords/29.979235/31.134202/29.657984/91.116846/beckerhagens/2"
+		   },
+		   {
+			"name": "3. Level Lines",
+			"type": "czml",
+			"url": "http://localhost:3001/api/createGridCoords/29.979235/31.134202/29.657984/91.116846/beckerhagens/3"
+		   },
+		   {
+			"name": "4. Level Lines",
+			"type": "czml",
+			"url": "http://localhost:3001/api/createGridCoords/29.979235/31.134202/29.657984/91.116846/beckerhagens/4"
+		   }
+		]
+	   },
+	   {
+		"name": "Beckerhagens - Gizeh - Ankor Wat",
+		"type": "group",
+		"items": [
+		   {
+			"name": "Points",
+			"type": "czml",
+			"url": "http://localhost:3001/api/createGridCoords/29.979235/31.134202/13.412469/103.866986/beckerhagens/p"
+		   },
+		   {
+			"name": "1. Level Lines",
+			"type": "czml",
+			"url": "http://localhost:3001/api/createGridCoords/29.979235/31.134202/13.412469/103.866986/beckerhagens/1"
+		   },
+		   {
+			"name": "2. Level Lines",
+			"type": "czml",
+			"url": "http://localhost:3001/api/createGridCoords/29.979235/31.134202/13.412469/103.866986/beckerhagens/2"
+		   },
+		   {
+			"name": "3. Level Lines",
+			"type": "czml",
+			"url": "http://localhost:3001/api/createGridCoords/29.979235/31.134202/13.412469/103.866986/beckerhagens/3"
+		   },
+		   {
+			"name": "4. Level Lines",
+			"type": "czml",
+			"url": "http://localhost:3001/api/createGridCoords/29.979235/31.134202/13.412469/103.866986/beckerhagens/4"
+		   }
+		]
+	   },
+	   {
+		"name": "Beckerhagens - Gizeh - Stonehenge",
+		"type": "group",
+		"items": [
+		   {
+			"name": "Points",
+			"type": "czml",
+			"url": "http://localhost:3001/api/createGridCoords/29.979235/31.134202/51.178882/-1.826215/beckerhagens/p"
+		   },
+		   {
+			"name": "1. Level Lines",
+			"type": "czml",
+			"url": "http://localhost:3001/api/createGridCoords/29.979235/31.134202/51.178882/-1.826215/beckerhagens/1"
+		   },
+		   {
+			"name": "2. Level Lines",
+			"type": "czml",
+			"url": "http://localhost:3001/api/createGridCoords/29.979235/31.134202/51.178882/-1.826215/beckerhagens/2"
+		   },
+		   {
+			"name": "3. Level Lines",
+			"type": "czml",
+			"url": "http://localhost:3001/api/createGridCoords/29.979235/31.134202/51.178882/-1.826215/beckerhagens/3"
+		   },
+		   {
+			"name": "4. Level Lines",
+			"type": "czml",
+			"url": "http://localhost:3001/api/createGridCoords/29.979235/31.134202/51.178882/-1.826215/beckerhagens/4"
+		   }
+		]
+	   },
+	   {
+		"name": "Beckerhagens Great Circle",
+		"type": "group",
+		"items": [
+		   {
+			"name": "Points",
+			"type": "czml",
+			"url": "http://maps.leylines.ch/api/beckerhagens/original/points"
+		   },
+		   {
+			"name": "Level1-Areas",
+			"type": "czml",
+			"url": "http://maps.leylines.ch/api/beckerhagens/original/area"
+		   },
+		   {
+			"name": "Level1",
+			"type": "czml",
+			"url": "http://maps.leylines.ch/api/beckerhagens/original/1"
+		   },
+		   {
+			"name": "Level2",
+			"type": "czml",
+			"url": "http://maps.leylines.ch/api/beckerhagens/original/2"
+		   },
+		   {
+			"name": "Level3",
+			"type": "czml",
+			"url": "http://maps.leylines.ch/api/beckerhagens/original/3"
+		   },
+		   {
+			"name": "Level4",
+			"type": "czml",
+			"url": "http://maps.leylines.ch/api/beckerhagens/original/4"
+		   }
+		]
+	   }
+	]
+     }
+  ]
+}

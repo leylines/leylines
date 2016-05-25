@@ -1,0 +1,72 @@
+{
+  "catalog": [
+     {
+	"name": "Data Providers",
+	"type": "group",
+	"items": [
+	   {
+		"name": "Gebco",
+		"description": "Gebco WMS-Service",
+		"dataCustodian": "Gebco",
+		"url": "http://www.gebco.net/data_and_products/gebco_web_services/web_map_service/mapserv",
+		"type": "wms-getCapabilities"
+	   },
+	   {
+		"name": "EOX.at",
+		"description": "EOX.at WMS-Service",
+		"dataCustodian": "EOX.at",
+		"url": "http://tiles.maps.eox.at/wms",
+		"type": "wms-getCapabilities"
+	   },
+	   {
+		"name": "NASA",
+		"description": "NASA WMS-Service",
+		"dataCustodian": "NASA",
+		"url": "http://maps.leylines.ch:8080/geoserver/NASA/wms",
+		"type": "wms-getCapabilities"
+	   },
+	   {
+		"name": "NASA Earthdata",
+		"description": "NASA Earthdata WMS-Service",
+		"dataCustodian": "NASA",
+		"url": "http://map1.vis.earthdata.nasa.gov/wmts-webmerc/wmts.cgi",
+		"type": "wmts-getCapabilities"
+	   },
+	   {
+		"name": "NASA Earthdata Arctic",
+		"description": "NASA Earthdata WMS-Service",
+		"dataCustodian": "NASA",
+		"url": "http://map1.vis.earthdata.nasa.gov/wmts-arctic/wmts.cgi",
+		"type": "wmts-getCapabilities"
+	   },
+	   {
+		"name": "NASA Earthdata Antarctic",
+		"description": "NASA Earthdata WMS-Service",
+		"dataCustodian": "NASA",
+		"url": "http://map1.vis.earthdata.nasa.gov/wmts-antarctic/wmts.cgi",
+		"type": "wmts-getCapabilities"
+	   },
+	   {
+		"name": "OSM WMS",
+		"description": "NOAA WMS-Service",
+		"dataCustodian": "[www.osm-wms.de](http://www.osm-wms.de/)",
+		"url": "http://129.206.228.72/cached/osm?Request=GetCapabilities",
+		"type": "wms-getCapabilities"
+	   },
+	   {
+		"name": "Swisstopo",
+		"description": "Swisstopo WMS-Service",
+		"dataCustodian": "[Swisstopo](http://geo.admin.ch)",
+		"url": "http://wms.geo.admin.ch",
+		"type": "wms-getCapabilities",
+		"rectangle": [
+			47.7,
+			11.0,
+			45.5,
+			5.458616862498189
+		]
+	   }
+	]
+     }
+  ]
+}

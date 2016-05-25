@@ -1,0 +1,95 @@
+{
+  "corsDomains" : [
+        "www.ancientpenwith.org"
+  ],
+  "catalog": [
+     {
+	"name": "Sites",
+	"type": "group",
+	"items": [
+	   {
+		"name": "www.ancientpenwith.org",
+		"type": "kml",
+		"url": "http://www.ancientpenwith.org/files/PenwithAncientSites-Alignments-27Sept2015.kmz"
+	   },
+	   {
+		"name": "megalithic.co.uk",
+		"type": "group",
+		"items": [
+		   {
+			"name": "Ancient Temple",
+			"type": "czml",
+			"dataCustodian": "[The Megalithic Portal](http://www.megalithic.co.uk/)",
+			"legendUrl": "http://www.megalithic.co.uk/topics.php?countries=1#type",
+			"url": "http://maps.leylines.ch/api/megalithic/Ancient Temple"
+		   },
+		   {
+			"name": "Burial Chamber (Dolmen)",
+			"type": "czml",
+			"dataCustodian": "[The Megalithic Portal](http://www.megalithic.co.uk/)",
+			"description": "A megalithic chambered tomb, with a large flat stone laid on upright ones. Cromlech is a term meaning the same thing, archaic in English but still used in Welsh and Breton languages.",
+			"legendUrl": "http://www.megalithic.co.uk/topics.php?countries=1#type",
+			"url": "http://maps.leylines.ch/api/megalithic/Burial Chamber (Dolmen)"
+		   },
+		   {
+			"name": "Cave or Rock Shelter",
+			"type": "czml",
+			"dataCustodian": "[The Megalithic Portal](http://www.megalithic.co.uk/)",
+			"description": "A cave with evidence of inhabitation by Palaeolithic (Old Stone Age) Man.",
+			"legendUrl": "http://www.megalithic.co.uk/topics.php?countries=1#type",
+			"url": "http://maps.leylines.ch/api/megalithic/Cave or Rock Shelter"
+		   },
+		   {
+			"name": "Henge",
+			"type": "czml",
+			"dataCustodian": "[The Megalithic Portal](http://www.megalithic.co.uk/)",
+			"description": "Roughly circular prehistoric earthwork consisting of a non-defensive ditch and bank with a level plateau in the centre. A henge does not have to contain a stone circle but many do",
+			"legendUrl": "http://www.megalithic.co.uk/topics.php?countries=1#type",
+			"url": "http://maps.leylines.ch/api/megalithic/Henge"
+		   },
+		   {
+			"name": "Pyramid / Mastaba",
+			"type": "czml",
+			"dataCustodian": "[The Megalithic Portal](http://www.megalithic.co.uk/)",
+			"legendUrl": "http://www.megalithic.co.uk/topics.php?countries=1#type",
+			"url": "http://maps.leylines.ch/api/megalithic/Pyramid / Mastaba"
+		   },
+		   {
+			"name": "Sculptured Stone",
+			"type": "czml",
+			"dataCustodian": "[The Megalithic Portal](http://www.megalithic.co.uk/)",
+			"legendUrl": "http://www.megalithic.co.uk/topics.php?countries=1#type",
+			"url": "http://maps.leylines.ch/api/megalithic/Sculptured Stone"
+		   },
+		   {
+			"name": "Standing Stone (Menhir)",
+			"type": "czml",
+			"dataCustodian": "[The Megalithic Portal](http://www.megalithic.co.uk/)",
+			"legendUrl": "http://www.megalithic.co.uk/topics.php?countries=1#type",
+			"url": "http://maps.leylines.ch/api/megalithic/Standing Stone (Menhir)"
+		   },
+		   {
+			"name": "Stone Circle",
+			"type": "czml",
+			"dataCustodian": "[The Megalithic Portal](http://www.megalithic.co.uk/)",
+			"legendUrl": "http://www.megalithic.co.uk/topics.php?countries=1#type",
+			"url": "http://maps.leylines.ch/api/megalithic/Stone Circle"
+		   },
+		   {
+			"name": "Stone Row / Alignment",
+			"type": "czml",
+			"dataCustodian": "[The Megalithic Portal](http://www.megalithic.co.uk/)",
+			"url": "http://maps.leylines.ch/api/megalithic/Stone Row / Alignment"
+		   },
+		   {
+			"name": "Passage Grave",
+			"type": "czml",
+			"dataCustodian": "[The Megalithic Portal](http://www.megalithic.co.uk/)",
+			"url": "http://maps.leylines.ch/api/megalithic/Passage Grave"
+		   }
+		]
+	   }
+	]
+     }
+  ]
+}
