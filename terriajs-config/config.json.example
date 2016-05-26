@@ -8,9 +8,9 @@
         "leylines"
     ],
     "parameters": {
-        "bingMapsKey": "",
-	"urthecastApiKey": "",
-	"urthecastApiSecret": "",
+        "bingMapsKey": "<key>",
+	"urthecastApiKey": "<key>",
+	"urthecastApiSecret": "<secret>",
         "disclaimer": {
             "text": "Disclaimer: leylines.ch must not be used for navigation or precise spatial analysis",
             "url": "http://www.leylines.ch/about"
