@@ -193,6 +193,7 @@
 		"type": "group",
 		"items": [
 		   {
+			"name": "Rivers",
 			"description": "Rivers",
 			"dataCustodian": "public",
 			"type": "wms",

@@ -59,19 +59,19 @@ var createGlobalBaseMapOptions = function(terria, bingMapsKey) {
         catalogItem: esriWorldImagery
     }));
 
-    var esriWorldStreetMap = new ArcGisMapServerCatalogItem(terria);
-    esriWorldStreetMap.name = 'ESRI World Street Map';
-    esriWorldStreetMap.url = 'http://services.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer';
-    esriWorldStreetMap.opacity = 1.0;
-    esriWorldStreetMap.isRequiredForRendering = true;
+    var esriWorldTopoMap = new ArcGisMapServerCatalogItem(terria);
+    esriWorldTopoMap.name = 'ESRI World Topo Map';
+    esriWorldTopoMap.url = 'http://services.arcgisonline.com/arcgis/rest/services/World_Topo_Map/MapServer';
+    esriWorldTopoMap.opacity = 1.0;
+    esriWorldTopoMap.isRequiredForRendering = true;
 
     result.push(new BaseMapViewModel({
         image: terria.baseUrl + 'images-leylines/esriWorldStreetMap.png',
-        catalogItem: esriWorldStreetMap
+        catalogItem: esriWorldTopoMap
     }));
 
     var esriNationalGeographic = new ArcGisMapServerCatalogItem(terria);
-    esriNationalGeographic.name = 'ESRI World Street Map';
+    esriNationalGeographic.name = 'National Geographic Map';
     esriNationalGeographic.url = 'http://services.arcgisonline.com/ArcGIS/rest/services/NatGeo_World_Map/MapServer';
     esriNationalGeographic.opacity = 1.0;
     esriNationalGeographic.isRequiredForRendering = true;
