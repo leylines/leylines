@@ -95,11 +95,91 @@
 		]
 	   },
 	   {
+		"name": "Earthquakes",
+		"type": "group",
+		"items": [
+		   {
+			"name": "Past 7 Days, M1.0+ Earthquakes",
+			"type": "group",
+			"items": [
+			      {
+				"name": "Colored by Age",
+				"description": "Earthquake Hazards Program",
+				"dataCustodian": "http://earthquake.usgs.gov",
+				"type": "kml",
+				"url": "http://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/1.0_week_age_link.kml"
+			      },
+			      {
+				"name": "Colored by Depth",
+				"description": "Earthquake Hazards Program",
+				"dataCustodian": "http://earthquake.usgs.gov",
+				"type": "kml",
+				"url": "http://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/1.0_week_depth_link.kml"
+			      },
+			      {
+				"name": "Colored by Age, Animated",
+				"description": "Earthquake Hazards Program",
+				"dataCustodian": "http://earthquake.usgs.gov",
+				"type": "kml",
+				"url": "http://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/1.0_week_age_animated_link.kml"
+			      },
+			      {
+				"name": "Colored by Depth, Animated",
+				"description": "Earthquake Hazards Program",
+				"dataCustodian": "http://earthquake.usgs.gov",
+				"type": "kml",
+				"url": "http://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/1.0_week_depth_animated_link.kml"
+			      }
+			]
+		   },
+		   {
+			"name": "Past 30 Days, M2.5+ Earthquakes",
+			"type": "group",
+			"items": [
+			      {
+				"name": "Colored by Age",
+				"description": "Earthquake Hazards Program",
+				"dataCustodian": "http://earthquake.usgs.gov",
+				"type": "kml",
+				"url": "http://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/2.5_week_age_link.kml"
+			      },
+			      {
+				"name": "Colored by Depth",
+				"description": "Earthquake Hazards Program",
+				"dataCustodian": "http://earthquake.usgs.gov",
+				"type": "kml",
+				"url": "http://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/2.5_week_depth_link.kml"
+			      },
+			      {
+				"name": "Colored by Age, Animated",
+				"description": "Earthquake Hazards Program",
+				"dataCustodian": "http://earthquake.usgs.gov",
+				"type": "kml",
+				"url": "http://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/2.5_week_age_animated_link.kml"
+			      },
+			      {
+				"name": "Colored by Depth, Animated",
+				"description": "Earthquake Hazards Program",
+				"dataCustodian": "http://earthquake.usgs.gov",
+				"type": "kml",
+				"url": "http://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/2.5_week_depth_animated_link.kml"
+			      }
+			]
+		   }
+		]
+	   },
+	   {
 		"name": "Volcanos",
-		"description": "Volcano Database",
-		"dataCustodian": "https://www.ngdc.noaa.gov",
-		"type": "czml",
-		"url": "http://maps.leylines.ch/api/volcanos/volcanos/orange"
+		"type": "group",
+		"items": [
+		   {
+			"name": "Volcano Database",
+			"description": "Volcano Database",
+			"dataCustodian": "https://www.ngdc.noaa.gov",
+			"type": "czml",
+			"url": "http://maps.leylines.ch/api/points/environment/volcanos/volcano.png"
+		   }
+		]
 	   },
 	   {
 		"name": "Rivers",
