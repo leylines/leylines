@@ -25,6 +25,11 @@
 		"url": "http://maps.leylines.ch/api/points/poi/stargates/stargate.png"
 	   },
 	   {
+		"name": "Lakes",
+		"type": "czml",
+		"url": "http://maps.leylines.ch/api/points/poi/lakes/lake.png"
+	   },
+	   {
 		"name": "Sites",
 		"type": "czml",
 		"url": "http://maps.leylines.ch/api/points/poi/sites/button_red.png"

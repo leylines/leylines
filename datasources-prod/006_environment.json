@@ -189,9 +189,33 @@
 		]
 	   },
 	   {
-		"name": "Rivers",
+		"name": "Misc",
 		"type": "group",
 		"items": [
+		   {
+			"name": "Age of the Oceanic Lithosphere",
+			"description": "Age of the Oceanic Lithosphere",
+			"dataCustodian": "https://maps.ngdc.noaa.gov/",
+			"type": "wms",
+			"url": "https://maps.ngdc.noaa.gov/arcgis/services/web_mercator/seafloor_age/MapServer/WMSServer",
+			"layers": "Age of Oceanic Lithosphere - millions of years",
+			"parameters": {
+				"tiled": true
+			},
+			"dataUrlType": "http://www.ngdc.noaa.gov/mgg/ocean_age/ocean_age_2008.html"
+		   },
+		   {
+			"name": "Plate Boundaries - UTIG",
+			"description": "Plate Boundaries - UTIG",
+			"dataCustodian": "https://maps.ngdc.noaa.gov/",
+			"type": "wms",
+			"url": "https://maps.ngdc.noaa.gov/arcgis/services/web_mercator/seafloor_age/MapServer/WMSServer",
+			"layers": "Plate Boundaries - UTIG",
+			"parameters": {
+				"tiled": true
+			},
+			"dataUrlType": "http://www.ngdc.noaa.gov/mgg/ocean_age/ocean_age_2008.html"
+		   },
 		   {
 			"name": "Rivers",
 			"description": "Rivers",
