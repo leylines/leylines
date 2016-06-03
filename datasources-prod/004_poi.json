@@ -5,6 +5,11 @@
 	"type": "group",
 	"items": [
 	   {
+		"name": "Air Force Space Command",
+		"type": "czml",
+		"url": "http://maps.leylines.ch/api/points/poi/afspc/afspc.png"
+	   },
+	   {
 		"name": "Mountains",
 		"description": "Interesting mountains",
 		"type": "czml",
