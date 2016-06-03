@@ -6,6 +6,7 @@
 	"items": [
 	   {
 		"name": "Mountains",
+		"description": "Interesting mountains",
 		"type": "czml",
 		"url": "http://maps.leylines.ch/api/points/poi/mountains/mountain.png"
 	   },
