@@ -66,7 +66,7 @@ var createGlobalBaseMapOptions = function(terria, bingMapsKey) {
     esriWorldTopoMap.isRequiredForRendering = true;
 
     result.push(new BaseMapViewModel({
-        image: terria.baseUrl + 'images-leylines/esriWorldStreetMap.png',
+        image: terria.baseUrl + 'images-leylines/esriWorldTopoMap.png',
         catalogItem: esriWorldTopoMap
     }));
 
@@ -94,7 +94,7 @@ var createGlobalBaseMapOptions = function(terria, bingMapsKey) {
 
     var stamenToner = new OpenStreetMapCatalogItem(terria);
     stamenToner.name = 'Stamen Toner';
-    stamenToner.url = 'http://stamen-tiles.a.ssl.fastly.net/toner/';
+    stamenToner.url = 'http://stamen-tiles.a.ssl.fastly.net/toner-lite/';
     stamenToner.opacity = 1.0;
     stamenToner.isRequiredForRendering = true;
 

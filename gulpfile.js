@@ -76,7 +76,7 @@ gulp.task('inject-files', function(done) {
         ], { base: '../build-data/terriajs-server-config' })
     .pipe(gulp.dest('node_modules/terriajs-server'));
     gulp.src([
-            '../build-data/cesium-js/CzmlDataSource.js'
+            '../build-data/cesium-js/*.js'
         ], { base: '../build-data/cesium-js' })
     .pipe(gulp.dest('node_modules/terriajs-cesium/Source/DataSources'));
     return;
