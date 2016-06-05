@@ -210,6 +210,10 @@ app.use(testHost);
 app.use(demoHost);
 app.use(wwwHost);
 
+if (typeof configSettings.trustProxy !== 'undefined') {
+    app.set('trust proxy', configSettings.trustProxy);
+}
+
 var show404 = serveWwwRoot && exists(wwwroot + '/404.html');
 var show500 = serveWwwRoot && exists(wwwroot + '/500.html');
 
@@ -226,8 +230,9 @@ var bypassUpstreamProxyHostsMap = (configSettings.bypassUpstreamProxyHosts || []
         }
         return map;
     }, {});
+
 app.use('/proxy', require('./proxy')({
-    proxyDomains: configSettings.allowProxyFor,
+    proxyableDomains: configSettings.allowProxyFor,
     proxyAllDomains: configSettings.proxyAllDomains,
     proxyAuth: proxyAuth,
     upstreamProxy: configSettings.upstreamProxy,
@@ -267,6 +272,11 @@ app.post('/reflect', bodyParser.urlencoded({extended: true, type: function() { r
     res.status(200).send(response);
 });
 */
+
+var feedbackService = require('./feedback')(configSettings.feedback);
+if (feedbackService) {
+    app.use('/feedback', feedbackService);
+}
 
 app.use(error404);
 app.use(error500);
