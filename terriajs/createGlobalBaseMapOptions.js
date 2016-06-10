@@ -171,7 +171,7 @@ var createGlobalBaseMapOptions = function(terria, bingMapsKey, digitalGlobeApiKe
     digitalMap.isRequiredForRendering = true;
 
     result.push(new BaseMapViewModel({
-        image: terria.baseUrl + 'images-leylines/blackMarble.png',
+        image: terria.baseUrl + 'images-leylines/mapBox.png',
         catalogItem: digitalMap
     }));
 
