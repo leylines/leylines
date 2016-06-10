@@ -10,6 +10,11 @@
 		"url": "http://maps.leylines.ch/api/points/poi/afspc/afspc.png"
 	   },
 	   {
+		"name": "Haarp",
+		"type": "czml",
+		"url": "http://maps.leylines.ch/api/points/poi/haarp/haarp.png"
+	   },
+	   {
 		"name": "Mountains",
 		"description": "Interesting mountains",
 		"type": "czml",

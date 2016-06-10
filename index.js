@@ -29,6 +29,7 @@ var configuration = {
     bingMapsKey: undefined // use Cesium key
 };
 
+
 // Check browser compatibility early on.
 // A very old browser (e.g. Internet Explorer 8) will fail on requiring-in many of the modules below.
 // 'ui' is the name of the DOM element that should contain the error popup if the browser is not compatible
@@ -136,7 +137,7 @@ terria.start({
 
     // Create the various base map options.
     //var australiaBaseMaps = createAustraliaBaseMapOptions(terria);
-    var allBaseMaps = createGlobalBaseMapOptions(terria, configuration.bingMapsKey);
+    var allBaseMaps = createGlobalBaseMapOptions(terria, configuration.bingMapsKey, configuration.digitalGlobeApiKey);
 
     //var allBaseMaps = australiaBaseMaps.concat(globalBaseMaps);
     selectBaseMap(terria, allBaseMaps, 'EOX Terrain', true);

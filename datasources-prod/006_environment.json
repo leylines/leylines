@@ -21,6 +21,17 @@
 			"url": "http://maps.leylines.ch/api/poles/pole_south/white"
 		   },
 		   {
+			"name": "Earth Magnetic Anomaly Grid",
+			"description": "EMAG2: Earth Magnetic Anomaly Grid (2-arc-minute resolution) Magnetic anomaly maps provide insight into the subsurface structure and composition of the Earth's crust. Anomalies trending parallel to the isochrons (lines of equal age) in the oceans reveal ...",
+			"dataCustodian": "http://maps.ngdc.noaa.gov/",
+			"type": "wms",
+			"url": "http://maps.ngdc.noaa.gov/arcgis/services/web_mercator/emag2/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+			"layers": "EMAG2 Image",
+			"parameters": {
+				"tiled": true
+			}
+		   },
+		   {
 			"name": "WMM-2015-15min",
 			"description": "World Magnetic Field 2015",
 			"dataCustodian": "public",
@@ -87,6 +98,78 @@
 			"type": "wms",
 			"url": "http://maps.leylines.ch:8080/geoserver/environment/wms",
 			"layers": "wmm_2020_15min",
+			"parameters": {
+				"tiled": true
+			},
+			"dataUrlType": "none"
+		   }
+		]
+	   },
+	   {
+		"name": "Mines, Deposits and Occurrences",
+		"type": "group",
+		"items": [
+		   {
+			"name": "Mineral Resource Data System",
+			"description": "Mineral Resource Data System",
+			"dataCustodian": "http://mrdata.usgs.gov",
+			"type": "wms",
+			"url": "http://mrdata.usgs.gov/services/mrds?request=getcapabilities&service=WMS&version=1.1.1&",
+			"layers": "mrds",
+			"parameters": {
+				"tiled": true
+			},
+			"dataUrlType": "none"
+		   },
+		   {
+			"name": "Rare Earth",
+			"description": "Rare Earth",
+			"dataCustodian": "http://mrdata.usgs.gov",
+			"type": "wms",
+			"url": "http://mrdata.usgs.gov/services/ree?request=getcapabilities&service=WMS&version=1.1.1&",
+			"layers": "ree",
+			"parameters": {
+				"tiled": true
+			},
+			"dataUrlType": "none"
+		   }
+		]
+	   },
+	   {
+		"name": "Historical Natural Hazards",
+		"type": "group",
+		"items": [
+		   {
+			"name": "Tsunami Events",
+			"description": "Tsunami Events",
+			"dataCustodian": "http://maps.ngdc.noaa.gov/",
+			"type": "wms",
+			"url": "http://maps.ngdc.noaa.gov/arcgis/services/web_mercator/hazards/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+			"layers": "10",
+			"parameters": {
+				"tiled": true
+			},
+			"dataUrlType": "none"
+		   },
+		   {
+			"name": "Significant Earthquakes",
+			"description": "Significant Earthquakes",
+			"dataCustodian": "http://maps.ngdc.noaa.gov/",
+			"type": "wms",
+			"url": "http://maps.ngdc.noaa.gov/arcgis/services/web_mercator/hazards/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+			"layers": "6",
+			"parameters": {
+				"tiled": true
+			},
+			"dataUrlType": "none"
+		   },
+		   {
+			"name": "Significant Volcanic Eruptions",
+			"description": "Significant Volcanic Eruptions",
+			"dataCustodian": "http://maps.ngdc.noaa.gov/",
+			"type": "wms",
+			"url": "http://maps.ngdc.noaa.gov/arcgis/services/web_mercator/hazards/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+			"layers": "5",
 			"parameters": {
 				"tiled": true
 			},

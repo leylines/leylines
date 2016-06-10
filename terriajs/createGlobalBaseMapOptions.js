@@ -6,10 +6,12 @@ var BingMapsCatalogItem = require('../Models/BingMapsCatalogItem');
 var WebMapServiceCatalogItem = require('../Models/WebMapServiceCatalogItem');
 var OpenStreetMapCatalogItem = require('../Models/OpenStreetMapCatalogItem');
 var ArcGisMapServerCatalogItem = require('../Models/ArcGisMapServerCatalogItem');
+var MapboxMapCatalogItem = require('../Models/MapboxMapCatalogItem');
 
 var BingMapsStyle = require('terriajs-cesium/Source/Scene/BingMapsStyle');
 
-var createGlobalBaseMapOptions = function(terria, bingMapsKey) {
+var createGlobalBaseMapOptions = function(terria, bingMapsKey, digitalGlobeApiKey) {
+
     var result = [];
 
     var bingMapsAerialWithLabels = new BingMapsCatalogItem(terria);
@@ -30,6 +32,7 @@ var createGlobalBaseMapOptions = function(terria, bingMapsKey) {
     bingMapsAerial.opacity = 1.0;
     bingMapsAerial.key = bingMapsKey;
     bingMapsAerial.isRequiredForRendering = true;
+    bingMapsAerial.requestWaterMask = true;
 
     result.push(new BaseMapViewModel({
         image: terria.baseUrl + 'images-leylines/bingAerial.png',
@@ -157,6 +160,19 @@ var createGlobalBaseMapOptions = function(terria, bingMapsKey) {
     result.push(new BaseMapViewModel({
         image: terria.baseUrl + 'images-leylines/blueMarble.png',
         catalogItem: blueMarble
+    }));
+
+    var digitalMap = new MapboxMapCatalogItem(terria);
+    digitalMap.name = 'DigitalGlobe Maps';
+    digitalMap.mapId = 'digitalglobe.nmmnloo2';
+    digitalMap.credit = 'DigitalGlobe Maps API';
+    digitalMap.accessToken = digitalGlobeApiKey;
+    digitalMap.opacity = 1.0;
+    digitalMap.isRequiredForRendering = true;
+
+    result.push(new BaseMapViewModel({
+        image: terria.baseUrl + 'images-leylines/blackMarble.png',
+        catalogItem: digitalMap
     }));
 
     var blackMarble = new WebMapServiceCatalogItem(terria);
