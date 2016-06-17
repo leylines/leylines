@@ -9,7 +9,7 @@ SET @pidx = @tableName + '_pidx';
 
 CREATE TABLE @maintable
 (
-  site_id serial NOT NULL,
+  id serial NOT NULL,
   site text,
   description text,
   object_sub_type integer references object_sub_types(id) DEFAULT 1,
@@ -24,7 +24,7 @@ CREATE TABLE @maintable
   date_creation timestamp without time zone,
   date_modification timestamp without time zone,
   country text,
-  CONSTRAINT @pkey PRIMARY KEY (site_id)
+  CONSTRAINT @pkey PRIMARY KEY (id)
 )
 WITH (
   OIDS=FALSE
@@ -49,6 +49,12 @@ CREATE TRIGGER "01_trigger_date_update"
   ON @maintable
   FOR EACH ROW
   EXECUTE PROCEDURE date_update();
+
+CREATE TRIGGER "02_trigger_point_geom_add_object_type"
+  AFTER INSERT
+  ON leylines.poi
+  FOR EACH ROW
+  EXECUTE PROCEDURE point_geom_add_object_type();
 
 CREATE TRIGGER "05_trigger_point_geom_get_coords"
   BEFORE INSERT OR UPDATE
@@ -87,16 +93,16 @@ GRANT ALL ON TABLE @relationtable TO postgres;
 ALTER TABLE @relationtable
   ADD CONSTRAINT site_id_fkey
   FOREIGN KEY (site_id)
-  REFERENCES @maintable(site_id)
+  REFERENCES @maintable(id)
   ON UPDATE CASCADE
-  ON DELETE RESTRICT;
+  ON DELETE CASCADE;
 
 ALTER TABLE @relationtable
   ADD CONSTRAINT object_id_fkey
   FOREIGN KEY (object_id)
-  REFERENCES object_type(object_id)
+  REFERENCES object_type(id)
   ON UPDATE CASCADE
-  ON DELETE RESTRICT;
+  ON DELETE CASCADE;
   
 CREATE TRIGGER "01_trigger_date_update"
   BEFORE INSERT OR UPDATE
